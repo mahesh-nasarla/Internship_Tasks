@@ -1,9 +1,11 @@
-# Problem: String Validators
-# Link: https://www.hackerrank.com/challenges/string-validators/problem
+# Problem: Introduction to Sets
+# Link: https://www.hackerrank.com/challenges/py-introduction-to-sets/problem
+
+def average(array):
+       return sum(set(array)) / len(set(array))
+
 if __name__ == '__main__':
-    s = input()
-    print(any(c.isalnum() for c in s))
-    print(any(c.isalpha() for c in s))
-    print(any(c.isdigit() for c in s))
-    print(any(c.islower() for c in s))
-    print(any(c.isupper() for c in s))
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result = average(arr)
+    print(result)
